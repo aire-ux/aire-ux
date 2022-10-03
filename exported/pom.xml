@@ -1,0 +1,237 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>io.sunshower.aire</groupId>
+        <artifactId>bom</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>../</relativePath>
+    </parent>
+    <groupId>io.sunshower.aire</groupId>
+    <artifactId>bom-exported</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>Aire Exported Bill-Of-Materials</name>
+    <url>http://www.sunshower.io</url>
+    <properties>
+        <arcus.version>1.41.50.Final</arcus.version>
+    </properties>
+
+    <description>
+        Aire Bill-Of-Materials Exported Artifacts
+    </description>
+
+    <dependencyManagement>
+        <dependencies>
+
+
+            <dependency>
+                <groupId>io.sunshower.arcus</groupId>
+                <artifactId>arcus-identicon</artifactId>
+                <version>${arcus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.sunshower.arcus</groupId>
+                <artifactId>tag-builder</artifactId>
+                <version>${arcus.version}</version>
+            </dependency>
+
+            <!--
+                annotations/arcus-jsr-305
+            -->
+            <dependency>
+                <groupId>io.sunshower.arcus.annotations</groupId>
+                <artifactId>arcus-jsr-305</artifactId>
+                <version>${arcus.version}</version>
+            </dependency>
+
+            <!--
+                arcus-ast
+            -->
+            <dependency>
+                <groupId>io.sunshower.arcus</groupId>
+                <artifactId>arcus-ast</artifactId>
+                <version>${arcus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.sunshower.arcus.cryptkeeper</groupId>
+                <artifactId>cryptkeeper-api</artifactId>
+                <version>${arcus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.sunshower.arcus.cryptkeeper</groupId>
+                <artifactId>cryptkeeper-core</artifactId>
+                <version>${arcus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.sunshower.arcus</groupId>
+                <artifactId>arcus-log</artifactId>
+                <version>${arcus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.sunshower.arcus</groupId>
+                <artifactId>arcus-lambda</artifactId>
+                <version>${arcus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.sunshower.arcus</groupId>
+                <artifactId>arcus-lang</artifactId>
+                <version>${arcus.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>io.sunshower.arcus</groupId>
+                <artifactId>arcus-reflect</artifactId>
+                <version>${arcus.version}</version>
+            </dependency>
+
+
+            <!--
+                persistence libraries
+            -->
+            <dependency>
+                <groupId>io.sunshower.arcus.persist</groupId>
+                <artifactId>persist-api</artifactId>
+                <version>${arcus.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>io.sunshower.arcus.persist</groupId>
+                <artifactId>persist-jpa</artifactId>
+                <version>${arcus.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>io.sunshower.arcus.persist</groupId>
+                <artifactId>persist-core</artifactId>
+                <version>${arcus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.sunshower.arcus.persist</groupId>
+                <artifactId>persist-flyway</artifactId>
+                <version>${arcus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.sunshower.arcus.persist</groupId>
+                <artifactId>persist-hibernate</artifactId>
+                <version>${arcus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.sunshower.arcus.persist</groupId>
+                <artifactId>persist-condensation</artifactId>
+                <version>${arcus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.sunshower.arcus.persist</groupId>
+                <artifactId>persist-spring</artifactId>
+                <version>${arcus.version}</version>
+            </dependency>
+
+            <!--
+                configuration subproject
+            -->
+
+            <dependency>
+                <groupId>io.sunshower.arcus.config</groupId>
+                <artifactId>config-core</artifactId>
+                <version>${arcus.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>io.sunshower.arcus.config</groupId>
+                <artifactId>config-jaxb</artifactId>
+                <version>${arcus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.sunshower.arcus.config</groupId>
+                <artifactId>config-json</artifactId>
+                <version>${arcus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.sunshower.arcus.config</groupId>
+                <artifactId>config-spring</artifactId>
+                <version>${arcus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.sunshower.arcus.config</groupId>
+                <artifactId>config-xml</artifactId>
+                <version>${arcus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.sunshower.arcus.config</groupId>
+                <artifactId>config-yaml</artifactId>
+                <version>${arcus.version}</version>
+            </dependency>
+
+            <!--
+                end config subproject
+            -->
+
+            <!--
+                condensation subproject
+            -->
+
+            <dependency>
+                <groupId>io.sunshower.arcus</groupId>
+                <artifactId>condensation-core</artifactId>
+                <version>${arcus.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>io.sunshower.arcus</groupId>
+                <artifactId>condensation-json</artifactId>
+                <version>${arcus.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>io.sunshower.arcus</groupId>
+                <artifactId>css-selectors</artifactId>
+                <version>${arcus.version}</version>
+            </dependency>
+
+            <!--
+            gyre
+            -->
+            <dependency>
+                <groupId>io.sunshower.arcus</groupId>
+                <artifactId>gyre-api</artifactId>
+                <version>${arcus.version}</version>
+            </dependency>
+
+            <!--
+                test subproject
+            -->
+
+            <dependency>
+                <groupId>io.sunshower.arcus.test</groupId>
+                <artifactId>test-lang</artifactId>
+                <version>${arcus.version}</version>
+            </dependency>
+
+
+
+        </dependencies>
+    </dependencyManagement>
+</project>
