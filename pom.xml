@@ -5,7 +5,7 @@
 
   <groupId>io.sunshower.aire</groupId>
   <artifactId>bom</artifactId>
-  <version>1.0.9.Final</version>
+  <version>1.0.10-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <parent>
