@@ -17,6 +17,7 @@
     <url>http://www.sunshower.io</url>
     <properties>
         <aire.version>1.0.0-SNAPSHOT</aire.version>
+        <aire-common.version>1.0.0-SNAPSHOT</aire-common.version>
     </properties>
 
     <description>
@@ -25,6 +26,13 @@
 
     <dependencyManagement>
         <dependencies>
+
+
+            <dependency>
+                <groupId>io.sunshower.aire</groupId>
+                <artifactId>aire-common</artifactId>
+                <version>${aire-common.version}</version>
+            </dependency>
 
 
         </dependencies>
