@@ -16,8 +16,8 @@
     <name>Aire Exported Bill-Of-Materials</name>
     <url>http://www.sunshower.io</url>
     <properties>
-        <aire.version>1.0.16-SNAPSHOT</aire.version>
-        <aire-common.version>1.0.0-SNAPSHOT</aire-common.version>
+        <aire.version>1.0.17.Final</aire.version>
+        <aire-common.version>1.0.6.Final</aire-common.version>
     </properties>
 
     <description>
