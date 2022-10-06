@@ -6,12 +6,12 @@
   <parent>
     <groupId>io.sunshower.aire</groupId>
     <artifactId>bom</artifactId>
-    <version>1.0.16-SNAPSHOT</version>
+    <version>1.0.17.Final</version>
     <relativePath>../</relativePath>
   </parent>
   <groupId>io.sunshower.aire</groupId>
   <artifactId>bom-imported</artifactId>
-  <version>1.0.16-SNAPSHOT</version>
+  <version>1.0.17.Final</version>
   <packaging>pom</packaging>
 
   <name>Aire Imported Bill-Of-Materials</name>
